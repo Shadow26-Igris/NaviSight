@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NaviSight - Basic Setup</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+</head>
+<body>
+
+  <header>
+    <h1>NaviSight</h1>
+    <button id="voice-btn">Enable Voice Assistance</button>
+  </header>
+
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <p>Enable voice assistance automatically on page load.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <p>Live camera detects obstacles in real time.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <p>Voice guides user through navigation and alerts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="navigation" tabindex="0">
+    <h2>Navigation Assistant</h2>
+  
+    <label for="destination-input">Enter Destination:</label>
+    <input type="text" id="destination-input" placeholder="e.g., Central Park, NY" />
+    <button onclick="startNavigation()">Start Navigation</button>
+  
+    <p id="current-location">Fetching your current location...</p>
+    <p id="destination">Destination: -</p>
+    <p id="distance-info">Distance: -</p>
+  </section>
+  
+  
+  
+
+  <main>
+    <section id="camera-section">
+      <h2>Live Camera Feed</h2>
+      <!-- Video stream -->
+      <video id="webcam" autoplay playsinline></video>
+
+<!-- Latest alert display -->
+<div id="latest-alert" style="margin-top: 1em; font-weight: bold;"></div>
+
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

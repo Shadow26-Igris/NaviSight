@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f4f8;
+    color: #0b1e3d;
+  }
+  
+  header {
+    padding: 40px 20px;
+    background-color: #0b1e3d;
+    color: white;
+  }
+  
+  button {
+    background-color: #00bfa6;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  #camera-section {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+
+  .how-it-works {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .how-it-works h2 {
+    color: #0b1e3d;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .step {
+    background-color: #f4f8fb;
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .step-number {
+    font-size: 2rem;
+    color: #00bfa6;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+  }
+   
